@@ -1,0 +1,39 @@
+.eye {
+    display: flex;
+    justify-content: space-between;
+    width: 99px;
+}
+.eye-w {
+    width: 44px;
+    height: 70px;
+    border: #0e0d0d solid 1px;
+    border-radius: 50%;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+     background-color: white;
+}
+.eye-b {
+    width: 19px;
+    height: 19px;
+    border: #4f440b solid 6px;
+    background-color: black;
+    border-radius: 50%;
+    animation: eye 5s linear infinite;
+}
+
+.shadow {
+    width: 7px;
+    height: 5px;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    box-shadow: 1px 1px 4px whitesmoke;
+}
+@keyframes eye {
+0%,50%,100% {
+    transform: translate(0px,3px);
+} 
+25% , 75% {
+    transform: translatex(11px);
+}
+}
